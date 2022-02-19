@@ -17,7 +17,7 @@ ls videos/
 
 ## Roadmap
 
-I moved the videos in youtube folder because I will upload them to youtube durint the next days
+I moved the videos in youtube folder because I will upload them to youtube soon...
 ## Temporary Hosted By GitHub
 
 For now you can download videos from these links:
