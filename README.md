@@ -15,9 +15,6 @@ python3 create_videos.py
 ls videos/
 ```
 
-## Roadmap
-
-I moved the videos in youtube folder because I will upload them to youtube soon...
 ## Temporary Hosted By GitHub
 
 For now you can download videos from the following links:
