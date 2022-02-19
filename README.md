@@ -20,7 +20,7 @@ ls videos/
 I moved the videos in youtube folder because I will upload them to youtube soon...
 ## Temporary Hosted By GitHub
 
-For now you can download videos from these links:
+For now you can download videos from the following links:
 
 * [sono_le_diciannove,_andate_a_fanculo.mkv](https://raw.githubusercontent.com/lucky-sideburn/EveryTimesFanc/master/youtube//1/sono_le_diciannove,_andate_a_fanculo.mkv)
 * [sono_le_diciassette,_andate_a_fanculo.mkv](https://raw.githubusercontent.com/lucky-sideburn/EveryTimesFanc/master/youtube//1/sono_le_diciassette,_andate_a_fanculo.mkv)
