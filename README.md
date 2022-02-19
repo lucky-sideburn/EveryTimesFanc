@@ -1,5 +1,5 @@
 # EveryTimeFanc
-## Create Automatically short videos whith "andate a fanculo" and a time reference (day of week, day time ...)
+## Create Automatically short videos with "andate a fanculo" and a time reference (day of week, day time ...)
 
 ## Requiremnts
 
