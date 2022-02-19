@@ -24,11 +24,10 @@ def hex_code_colors():
     z = a + b + c
     return "#" + z.upper()
 
- 
 def create_image(text):
-    file_name = text.replace(" ", "_")#.replace("`", "").replace("'", "")
-    #color = hex_code_colors()
-    color = "blue"
+    file_name = text.replace(" ", "_").replace("`", "_").replace("'", "_")
+    color = hex_code_colors()
+    #color = "blue"
     fill_color = 'white'
     img = PILImage.new('RGB', (1024, 800), color = color)
     d = PILImageDraw.Draw(img)
@@ -39,7 +38,7 @@ def create_image(text):
 def create_sound(name):
     hash_object = hashlib.md5(name.encode())
     md5_hash = hash_object.hexdigest()
-    file_name = name.replace(" ", "_")#.replace("`", "").replace("'", "")
+    file_name = name.replace(" ", "_").replace("`", "_").replace("'", "_")
     text = ""
     i = 0
     while i < 5:
@@ -49,8 +48,8 @@ def create_sound(name):
     os.system(f"say -v Luca \"{text}\" -o sounds/{file_name}.aiff; lame -m m sounds/{file_name}.aiff sounds/{file_name}.mp3")
 
 def make_video(name):
-    file_name = name.replace(" ", "_")#.replace("`", "").replace("'", "")
-    os.system(f"ffmpeg -vb 20M -loop 1 -i images/{file_name}.png -i sounds/{file_name}.mp3 -shortest -acodec copy -vcodec mjpeg videos/{file_name}.mkv")
+    file_name = name.replace(" ", "_").replace("`", "_").replace("'", "_")
+    os.system(f"ffmpeg -y -vb 20M -loop 1 -i images/{file_name}.png -i sounds/{file_name}.mp3 -shortest -acodec copy -vcodec mjpeg videos/{file_name}.mkv")
 
 fuck = ", andate a fanculo"
 
@@ -61,24 +60,24 @@ os.system("ls sounds || mkdir sounds")
 for file in glob.glob("./times/*.times"):
     f = open(file, "r")
 
-    if file == "./times/mesi.times":
-        for line in f.readlines():
-            line = line.strip("\n")
-            final_string = f"{line}{fuck}"
-            print(final_string)
-            create_image(final_string)
-            create_sound(final_string)
+    #if file == "./times/mesi.times":
+        # for line in f.readlines():
+        #     line = line.strip("\n")
+        #     final_string = f"{line}{fuck}"
+        #     print(final_string)
+        #     create_image(final_string)
+        #     create_sound(final_string)
 
-        mesi_file = open("./times/mesi.times", "r")
-        for mese in mesi_file.readlines():
-            tutti_giorni_anno = open("./times/giorni.additional", "r")
-            for giorno_mese in tutti_giorni_anno.readlines():
-                giorno_mese = giorno_mese.strip("\n")
-                mese = mese.strip("\n")
-                final_string = f"è {giorno_mese}{mese.replace('è','')}{fuck}"
-                print(final_string)
-                create_image(final_string)
-                create_sound(final_string)
+        # mesi_file = open("./times/mesi.times", "r")
+        # for mese in mesi_file.readlines():
+        #     tutti_giorni_anno = open("./times/giorni.additional", "r")
+        #     for giorno_mese in tutti_giorni_anno.readlines():
+        #         giorno_mese = giorno_mese.strip("\n")
+        #         mese = mese.strip("\n")
+        #         final_string = f"è {giorno_mese}{mese.replace('è','')}{fuck}"
+        #         print(final_string)
+        #         create_image(final_string)
+        #         create_sound(final_string)
     
     if file == "./times/ore.times":
         for line in f.readlines():
