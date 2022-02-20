@@ -1,6 +1,8 @@
 # EveryTimeFanc
 ## Create Automatically short videos with "andate a fanculo" and a time reference (day of week, day time ...)
 
+[YouTube](https://www.youtube.com/channel/UCi4mW_VkLwsGY-JhnE8rGLQ/videos)
+
 ## Requiremnts
 
 * Python3
